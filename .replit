@@ -1,0 +1,12 @@
+run = ["dotnet", "run"]
+entrypoint = "main.fs"
+hidden = ["bin", "obj"]
+
+[nix]
+channel = "stable-22_11"
+
+[env]
+DOTNET_SKIP_FIRST_TIME_EXPERIENCE="true"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
